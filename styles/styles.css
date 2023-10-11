@@ -1,0 +1,1817 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+/* ESTILOS DEL NAV Y HEADER */
+
+ul{
+
+    list-style: none;
+}
+
+a{
+
+    text-decoration: none;
+    color: white;
+
+}
+
+/* ESTILOS DEL FOOTER */
+
+.footer{
+
+    background-color: black;
+    grid-area: footer;
+    height: 65px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+/* Logo del footer */
+
+.logo-footer{
+
+    height: 50px;
+}
+
+/* Texto del footer */
+
+.text-footer{
+
+    font-family: 'Poppins', sans-serif;
+    color: white;
+
+}
+
+/* Estilos de los botones  */
+
+.expansiones-btn{
+
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 0px;
+    background-color: transparent;
+    height: 48px;
+    
+
+}
+
+.login-btn{
+
+    margin-right: 25px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+    
+}
+
+.expansiones-btn:hover{
+
+    
+    background-color: white;
+    color: black;
+}
+
+.login-btn:hover{
+
+    
+    background-color: transparent;
+    color: white
+    
+}
+
+
+
+/* Haciendo que los elementos del nav queden en una sola linea */
+
+li{
+
+    display: inline-block;
+    
+
+}
+
+.header{
+
+    background-color: rgba(0, 0, 0, 0.87);
+    position: fixed;
+    width: 100vw;
+    height: 65px;
+    grid-area: header;
+    z-index: 1000; /* para que quede el nav bar encima de todo lo que esta en la pagina */
+    
+    
+
+
+}
+
+header:hover{
+
+    border-bottom: 1px solid white;
+    
+}
+
+/* Flex en el navbar */
+
+.navbar-flex-conteiner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+
+/* Ajustando la imagen de los logos en el navbar */
+
+.img-logo-nav{
+
+    height: 60px;
+}
+
+/* FONDO PARA EL INDEX */
+
+.bg-image{
+
+    background-image: url(../assets/bgimageindex.jpg);
+    background-repeat: no-repeat;
+    background-color: rgb(12, 12, 12);
+}
+
+
+/* Imagen del index */
+.img-index{
+
+    height: 250px;
+}
+
+
+
+/* Flex del index */
+
+.flex-container-index{
+
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    
+}
+
+.article-flex{
+    display: flex;
+    justify-content: center;
+}
+
+/* Ajustando el carrusel */
+
+.carrusel-index{
+    margin: 20px;
+    padding: 20px;
+    width: 60%;
+}
+
+.img-carrusel{
+    width: 20%;
+    height: 20%;
+
+}
+
+/* iFrame del index */
+
+.iframe-index{
+
+    width: 60%;
+    height: 70vh;
+}
+
+/* Fuente del texto del index */
+
+.index-font{
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: white;
+
+}
+
+.p-index{
+
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+/* Estilos de los botones del index*/
+.article-botones{
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.btn-comprar-index{
+
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    padding: 20px;
+    margin: 20px;
+}
+
+.btn-comprar-index:hover{
+
+    background-color: transparent;
+    color: white;
+}
+
+.btn-trailer-index{
+
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    
+}
+
+.btn-trailer-index:hover{
+
+    background-color: white;
+    color: black;
+}
+
+
+
+/* Flex container de las cards */
+
+.flex-container-cards{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+/* Estilizando las cards de boostrap */
+
+.boostrap-cards{
+
+    /* border: 1px solid white; */
+    background-color: transparent;
+    margin-left: 25px;
+    margin-right: 25px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+        
+
+}
+
+/* Boton de las cards */
+
+.btn-cards{
+
+    background-color: transparent;
+    border: 1px solid white;
+    color: transparent;
+}
+
+/* Modificando el h2 del titulo de las cards */
+
+.h2-index{
+
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 25px;
+
+}
+
+/* HACIENDO LA GRID DEL INDEX */
+
+.grid-container-index{
+
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: repeat(4) 50px;
+    grid-template-areas:
+        "header header header"
+        "section-1 section-1 section-1"
+        "section-2 section-2 section-2"
+        "section-3 section-3 section-3"
+        "section-4 section-4 section-4"
+        "footer footer footer"
+    
+    ;
+}
+
+.main{
+
+    grid-area: main;
+}
+
+.section-1{
+    grid-area: section-1;
+    margin-top: 50px;
+    padding-top: 25px;
+}
+
+.section-2{
+
+    grid-area: section-2;
+}
+
+.section-3{
+
+    grid-area: section-3;
+    height: 80vh;
+
+}
+
+.section-4{
+
+    grid-area: section-4;
+    height: 600px;
+    margin-top: 25px;
+}
+
+/* El grid area del Footer esta puesto más arriba en los estilos del footer */
+
+
+
+/* RESPONSIVE DEL INDEX */
+
+
+
+
+@media (min-width:480px) and (max-width: 600px){
+
+
+    .grid-container-index{
+
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4) 50px;
+        grid-template-areas: 
+
+            "header"
+            "section-1"
+            "section-2"
+            "section-3"
+            "section-4"
+            "footer"
+        
+        ;
+
+        
+
+    }
+
+   
+
+    .iframe-index{
+
+        width: 55%;
+        height: 250px;
+
+    }
+
+    .img-index{
+
+        width: 50%;
+        height: 45%;
+    }
+
+    .p-index{
+
+        text-align: center;
+        margin-right: 5px;
+        margin-right: 5px;
+        width: 75%;
+    }
+
+    .flex-container-cards{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .section-4{
+        height: 1600px;
+
+    }
+
+    .section-3{
+
+        height: 400px;
+    }
+    
+}
+
+
+@media (min-width:600px) and (max-width: 900px) {
+    
+    .grid-container-index{
+
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4) 50px;
+        grid-template-areas: 
+
+            "header"
+            "section-1"
+            "section-2"
+            "section-3"
+            "section-4"
+            "footer"
+        
+        ;
+
+        
+
+    }
+
+    .iframe-index{
+
+        width: 55%;
+        height: 300px;
+
+    }
+
+    .img-index{
+
+        width: 55%;
+        height: 50%;
+    }
+
+    .p-index{
+
+        text-align: center;
+        margin-right: 5px;
+        margin-right: 5px;
+        width: 75%;
+    }
+
+    .flex-container-cards{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .section-4{
+        height: 1600px;
+
+    }
+
+    .section-3{
+
+        height: 400px;
+    }
+
+}
+
+@media (min-width:900px) and (max-width:1200px) {
+    
+    .grid-container-index{
+
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4) 50px;
+        grid-template-areas: 
+
+            "header"
+            "section-1"
+            "section-2"
+            "section-3"
+            "section-4"
+            "footer"
+        
+        ;
+
+        
+
+    }
+    
+    
+    
+    .iframe-index{
+
+        height: 500px;
+    }
+
+    .flex-container-cards{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .section-4{
+        height: 1600px;
+
+    }
+
+    .section-3{
+
+        height: 600px;
+    }
+
+}
+
+/* MODIFICANDO EL HTML DE ARMS AGAINST TYRANNY */
+
+.header-arms{
+
+    background-color: rgba(1, 1, 136, 0.781);
+}
+
+
+/* Grid */
+
+
+.grid-container-arms{
+
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1;
+    grid-template-rows: 50px 900px 1fr 1fr 50px;
+    grid-template-areas:
+        "header"
+        "section-arms-1"
+        "section-arms-2"
+        "section-arms-3"
+        "footer"
+    
+    ;
+
+}
+
+/* Fondo */
+
+.arms-bg{
+
+    background-image: url(../assets/hoi-aat-bg.jpg);
+    background-repeat: repeat;
+    background-color: rgba(1, 1, 136, 0.897);
+    
+
+}
+
+
+
+
+
+/* Sections */
+
+.section-arms-1{
+
+    grid-area: section-arms-1;
+    display: flex;
+    justify-content: center;
+    
+    
+    
+    
+}
+
+
+.section-arms-2{
+    grid-area: section-arms-2;
+    margin-top: 10px;
+    background-color: rgba(1, 1, 136, 0.849);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+}
+
+.section-arms-3{
+
+    grid-area: section-arms-3;
+}
+
+/* Detalles */
+
+/* Detallando el segundo article del section 1 */
+.article-2-arms-1{
+    margin-top: 20px;
+
+}
+
+
+/* Ajustando el tamaño del logo de la expansion del juego */
+
+.arms-logo{
+
+    height: 500px;
+}
+
+
+
+
+/* Flex container del section 2 */
+
+.flex-container-arms-1{
+    display: flex;
+    flex-direction: row;
+       
+    align-items: center;
+
+}
+
+/* Ajustando la imagen del article del section 2 */
+
+.img-article-2{
+
+    height: 400px;
+    margin-left: 25px;
+    
+}
+
+.p-arms{
+    height: 300px;
+    width: 80%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-right: 10px;
+    color: white;
+    text-align: center;
+    /* Tuve que hacer este flex display porque no me funciona el align items para centrar el texto en el eje y*/
+    display: flex;
+    align-items: center;
+    border-right: 10px solid rgb(199, 199, 150);
+}
+
+/* Flex container del section 3 */
+
+.flex-container-arms-2{
+
+    display: flex;
+    justify-content: center;
+}
+
+/* Ajustando el tamaño del trailer del arms against tyranny */
+
+.iframe-arms{
+
+    height: 500px;
+    width: 850px;
+    border: 3px solid rgba(1, 1, 136, 0.849);
+}
+
+/* Detallando el article del iframe */
+.article-iframe-arms{
+
+    margin-top: 20px;
+}
+
+/* Ajustando el boton de comprar y trailer */
+
+.btn-arm-comprar{
+
+    background-color: rgb(156, 156, 118);
+    border: 1px solid rgba(190, 230, 47, 0.699);
+    color: white;
+}
+
+.btn-arm-trailer{
+
+    border: 1px solid rgba(190, 230, 47, 0.699);
+    
+}
+
+.btn-arm-trailer:hover{
+
+    background-color: rgb(156, 156, 118);
+    color: white;
+}
+
+/* Responsive de Arms Against Tyranny */
+
+@media (min-width:480px) and (max-width:600px) {
+    /* En este responsive no hace falta cambiar las grids, porque ya están en una columna */
+    
+    .header{
+        width: 100vw;
+    }
+
+    .flex-container-arms-1{
+        flex-direction: column;
+    }
+
+    .img-article-2{
+
+        height: 200px;
+        width: 360px;
+        margin-bottom: 20px;
+        margin: 0px auto;
+        margin-top: 10px;
+    
+    }
+
+    .p-arms{
+        border-right: none;
+        border-top: 10px solid rgb(199, 199, 150);
+        margin-top: 10px;
+    }
+
+    .iframe-arms{
+        height: 200px;
+        width: 310px;
+    }
+
+    .arms-logo{
+        width: 450px;
+        height: 430px;
+    }
+}
+
+@media (min-width:600px) and (max-width:900px) {
+    
+    .header{
+        width: 100vw;
+    }
+
+    .flex-container-arms-1{
+        flex-direction: column;
+    }
+
+    .img-article-2{
+
+        height: 250px;
+        width: 470px;
+        margin-bottom: 20px;
+        margin: 0px auto;
+        margin-top: 10px;
+    
+    }
+
+    .p-arms{
+        border-right: none;
+        border-top: 10px solid rgb(199, 199, 150);
+        margin-top: 10px;
+    }
+
+    .iframe-arms{
+        height: 350px;
+        width: 460px;
+    }
+
+}
+
+
+@media (min-width:900px) and (max-width:1200px) {
+    
+    .header{
+        width: 100vw;
+    }
+
+    .flex-container-arms-1{
+        flex-direction: column;
+    }
+
+    .img-article-2{
+
+        height: 400px;
+        width: 800px;
+        margin-bottom: 20px;
+        margin: 0px auto;
+        margin-top: 10px;
+    
+    }
+
+    .p-arms{
+        border-right: none;
+        border-top: 10px solid rgb(199, 199, 150);
+        margin-top: 10px;
+    }
+
+    .iframe-arms{
+        height: 400px;
+        width: 510px;
+    }
+
+}
+
+
+/* HTML DE BY BLOOD ALONE */
+
+
+/* Grid de By Blood Alone */
+
+.grid-container-blood{
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr) 50px;
+    grid-template-areas: 
+        "header"
+        "section-1-blood"
+        "section-2-blood"
+        "section-3-blood"
+        "footer"
+    
+    
+    ;
+
+
+}
+
+/* Cambiando el header */
+
+.header-blood{
+
+    background-color: rgba(0, 97, 0, 0.753);
+}
+
+
+/* Fondo del HTML */
+
+.bg-blood{
+
+    background-color: rgba(0, 97, 0, 0.753);
+    background-image: url(../assets/bg-blood.jpg);
+    background-repeat: repeat-y;
+}
+
+
+
+
+/* Sections */
+
+.section-1-blood{
+
+    grid-area: section-1-blood;
+    height: 845px;
+    
+    
+    
+}
+
+.section-2-blood{
+
+    grid-area: section-2-blood;
+    background-color: rgba(0, 97, 0, 0.555);
+    height: 840px;
+    display: flex;
+    
+    justify-content: center;
+    
+    
+}
+
+.section-3-blood{
+
+    grid-area: section-2-blood;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+
+/* Ajustando la imagen del logo */
+
+.img-logo-blood{
+
+    width: 540px;
+    height: 380px;
+    margin-top: 25px;
+    padding-top: 25px;
+}
+
+/* Flex container del section 1 */
+
+/* Cambiando los botones de comprar y trailer */
+
+.btn-blood-comprar{
+    background-color: rgba(0, 97, 0, 0.753);
+    color: white;
+    border: 1px solid rgb(0, 172, 0);
+}
+
+.btn-blood-comprar:hover{
+
+    color: black;
+}
+
+.btn-blood-trailer{
+
+    background-color: transparent;
+    border: 1px solid rgb(0, 172, 0);
+    color: black;
+
+}
+
+.btn-blood-trailer:hover{
+
+    background-color: rgba(0, 97, 0, 0.753);
+    color: white;
+}
+
+/* Article 1 */
+
+.flex-container-blood-1{
+
+    display: flex;   
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 25px;   
+    align-items: center;
+    
+
+}
+
+/* Texto del article 1 */
+
+.p-blood-logo{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+
+/* Article 2 */
+
+.flex-container-blood-2{
+
+    display: flex;
+    justify-content: center;
+
+}
+
+/* Section 2 */
+
+/* Cambiando el article 1 */
+
+.article-section-2-blood{
+
+    width: 1300px;
+    height: 900px;
+    background-color: rgba(19, 107, 19, 0.658);
+    border-radius: 25px;
+    padding: 50px;
+    text-align: center;
+    margin: 25px;
+    overflow-y: scroll;
+    
+}
+
+/* Editando las fuentes y el texto de las caracteristicas */
+
+.blood-features{
+
+    font-family: 'Poppins', sans-serif;
+    color: rgb(223, 223, 134);
+    
+    text-align: left;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.li-features{
+
+    margin: 20px;
+    padding: 20px;
+}
+
+.span-features{
+
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+/* Section 3 */
+
+/* Article 1  */
+
+.article-section-3-blood{
+
+    text-align: center;
+    background-color: rgb(19, 107, 19);
+    width: 100%;
+    padding: 20px;
+    
+}
+
+.h2-blood{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(223, 223, 134);
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+   
+    
+}
+
+/* Ajustando el iframe */
+
+.iframe-blood{
+
+    height: 600px;
+    width: 1050px;
+
+}
+
+/* Responsive desing */
+
+
+@media (min-width:480px) and (max-width:600px) {
+    
+
+    .iframe-blood{
+
+        height: 250px;
+        width: 400px;
+    }
+
+    .img-logo-blood{
+
+        height: 320px;
+        width: 400px;
+    }
+
+    .p-blood-logo{
+
+        text-align: center;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    
+    
+
+    
+
+}
+
+@media (min-width:600px) and (max-width:900px) {
+    .iframe-blood{
+
+        height: 350px;
+        width: 550px;
+    }
+
+    .img-logo-blood{
+
+        width: 550px;
+        height: 380px;
+    }
+
+    .p-blood-logo{
+
+        text-align: center;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    
+}
+
+@media (min-width:900px) and (max-width:1200px){
+    .iframe-blood{
+
+        height: 350px;
+        width: 550px;
+    }
+
+    .img-logo-blood{
+
+        width: 540px;
+        height: 380px;
+    }
+
+    .p-blood-logo{
+
+        text-align: center;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    
+    
+
+}
+
+
+/* ESTILOS DEL HTML DE NO STEP BACK */
+
+/* Cambiando el fondo */
+
+.bg-stepback{
+
+    background-image: url(../assets/bg-nostepback.jpg);
+    background-repeat: repeat-y;
+}
+
+/* Cambiando el header */
+
+.header-stepback{
+    background-color: rgba(30, 25, 48, 0.753);
+    
+}
+
+/* Grid No step baack */
+
+.grid-container-step{
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50px repeat(3, 1fr) 50px;
+    grid-template-areas:
+
+        "header header"
+        "section-1-step section-1-step"
+        "section-2-step section-2-step"
+        "section-3-step section-3-step"
+        "footer footer"
+
+    ;
+}
+
+
+/* sections no step back */
+
+.section-1-step{
+
+    grid-area: section-1-step;
+    height: 750px;
+    
+}
+
+.section-2-step{
+
+    grid-area: section-2-step;
+    
+        
+    background-color: rgba(30, 25, 48, 0.753);
+    
+
+}
+
+.section-3-step{
+
+    grid-area: section-3-step;
+    display: flex;
+    
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(30, 25, 48);
+    height: 780px;
+    
+    
+}
+
+
+/* Ajustando el tamaño del logo */
+.logo-step{
+    width: 540px;
+    height: 380px;
+    margin-top: 25px;
+    padding-top: 25px;
+}
+
+/* Flex para el logo y le texto */
+
+.flex-container-step-1{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+/* Cambiando el color al texto debajo del logo */
+
+.p-step-1{
+
+    font-family: 'Poppins', sans-serif;
+    color: rgb(175, 0, 0);
+    font-weight: 500;
+    padding-right: 25px;
+    padding-left: 25px;
+    
+}
+
+.p-step-2{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 15px;
+    padding-right: 25px;
+    padding-left: 25px;
+    
+
+}
+
+/* Estilizando los botones para no step back */
+
+.btn-step-comprar{
+
+    background-color: rgba(190, 0, 0, 0.568);
+    border: 1px solid rgb(30, 25, 48);
+    
+}
+
+.btn-step-trailer{
+
+    border: 1px solid rgb(30, 25, 48);
+    
+}
+
+.btn-step-trailer:hover{
+
+    background-color: rgba(190, 0, 0, 0.568);
+}
+
+
+/* Flex container de las caracteristicas */
+
+.flex-container-step-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Texto de las caracteristicas */
+
+.features-step{
+
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 15px;
+    
+}
+
+/* Modificando los elementos de la lissta */
+
+.li-features-step{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    
+}
+
+/* Cambiando los subtitulos de la lista de features */
+.span-features-step{
+    font-weight: 700;
+    color: rgb(167, 0, 0);
+    
+
+}
+
+/* Estilizando los articles de las caracteristicas */
+
+.article-1-step{
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    width: 600px;
+    border-left: 5px solid rgb(167, 0, 0);
+    height: 800px;
+    flex-wrap: wrap;
+}
+
+.article-2-step{
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    width: 600px;
+    border-right: 5px solid rgb(167, 0, 0);
+    height: 800px;
+    flex-wrap: wrap;
+}
+
+
+
+
+/* Modificando el iframe de no step back */
+
+.iframe-step{
+
+    height: 600px;
+    width: 1050px;
+    border: 4px solid rgb(167, 0, 0);
+}
+
+/* Modificando el texto del trailer */
+
+.trailer-step{
+
+    color: rgb(167, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    margin-top: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 24px;
+    
+}
+
+
+/* Responsive de No Step Back */
+
+@media (min-width:480px) and (max-width:600px) {
+    
+    .grid-container-step{
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px repeat(3,1fr) 50px;
+        grid-template-areas: 
+
+            "header"
+            "section-1-step"
+            "section-2-step"            
+            "section-3-step"
+            "footer"
+        ;
+    }
+
+    .flex-container-step-2{
+
+        flex-direction: column;
+        
+
+    }
+
+    .iframe-step{
+
+        height: 250px;
+        width: 400px;
+    }
+
+    .section-1-step{
+
+        text-align: center;
+    }
+
+    .logo-step{
+        height: 320px;
+        width: 400px;
+    }
+
+    /* Tuve un overflow que solo pude solucionar con esto */
+    .section-2-step{
+        overflow: scroll;
+    }
+
+    .article-1-step{
+
+        border: none;
+        padding-right: 25px;
+        padding-left: 25px;
+        margin-right: 25px;
+        
+        
+    }
+
+    .article-2-step{
+
+        border: none;
+        padding-right: 25px;
+        padding-left: 25px;
+        margin-right: 25px;
+    }
+
+    .li-features-step{
+        flex-wrap: wrap;
+    }
+
+    
+   
+
+
+}
+
+@media (min-width:600px) and (max-width:900px) {
+    
+    .grid-container-step{
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px repeat(3,1fr) 50px;
+        grid-template-areas: 
+
+            "header"
+            "section-1-step"
+            "section-2-step"            
+            "section-3-step"
+            "footer"
+        ;
+    }
+
+    .flex-container-step-2{
+
+        flex-direction: column;
+        
+
+    }
+
+    .iframe-step{
+
+        height: 350px;
+        width: 550px
+    }
+
+    .section-1-step{
+
+        text-align: center;
+    }
+
+    .logo-step{
+        width: 550px;
+        height: 380px;
+    }
+
+    .section-2-step{
+        overflow: hidden;
+    }
+
+    .article-1-step{
+
+        border: none;
+        padding-right: 25px;
+        padding-left: 25px;
+        margin-right: 25px;
+        
+        
+        
+    }
+
+    .article-2-step{
+
+        border: none;
+        padding-right: 25px;
+        padding-left: 25px;
+        margin-right: 25px;
+        
+    }
+
+    .li-features-step{
+        flex-wrap: wrap;
+    }
+
+
+}
+
+
+@media (min-width:900px) and (max-width:1200px) {
+
+    
+        .grid-container-step{
+
+            grid-template-columns: 1fr;
+            grid-template-rows: 50px repeat(3,1fr) 50px;
+            grid-template-areas: 
+    
+                "header"
+                "section-1-step"
+                "section-2-step"            
+                "section-3-step"
+                "footer"
+            ;
+        }
+    
+        .flex-container-step-2{
+    
+            flex-direction: column;
+            
+    
+        }
+    
+        .iframe-step{
+    
+            height: 350px;
+            width: 550px;
+        }
+    
+        .section-1-step{
+    
+            text-align: center;
+        }
+    
+        .logo-step{
+            width: 550px;
+            height: 380px;
+        }
+    
+        .section-2-step{
+            overflow: hidden;
+        }
+    
+        .article-1-step{
+    
+            border-right: 5px solid rgb(167, 0, 0);
+            border-left: 5px solid rgb(167, 0, 0);
+            padding-right: 25px;
+            padding-left: 25px;
+            margin-right: 25px;
+            
+            
+        }
+    
+        .article-2-step{
+    
+            border-right: 5px solid rgb(167, 0, 0);
+            border-left: 5px solid rgb(167, 0, 0);
+            padding-right: 25px;
+            padding-left: 25px;
+            margin-right: 25px;
+        }
+    
+        .li-features-step{
+            flex-wrap: wrap;
+        }
+
+
+}
+
+
+
+
+/* MODIFICANDO EL HTML DEL BOSPORUS */
+
+/* Cambiando el headerr */
+
+.header-bosporus{
+
+    background-color: rgba(22, 27, 22, 0.808);
+}
+
+/* Cambiando el fondo */
+
+.bg-bosporus{
+
+    background-image: url(../assets/bg-bosporus.jpg);
+    background-repeat: no-repeat;
+    background-color: rgb(22, 27, 22);
+}
+
+/* Ajustando la imagen del logo */
+
+.logo-bosporus{
+
+    width: 610px;
+    height: 300px;
+    margin-top: 25px;
+    padding-top: 25px;
+    
+
+
+}
+
+
+/* Creando el Grid para el HTML de Bosporus */
+
+.grid-container-bosporus{
+    
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px repeat(4, 1fr) 50px;
+    grid-template-areas: 
+    
+        "header"
+        "section-1-bosporus"
+        "section-2-bosporus"
+        "section-3-bosporus"
+        "section-4-bosporus"
+        "footer"
+    
+    ;
+}
+
+/* Sections de bosporus.html */
+
+.section-1-bosporus{
+
+    grid-area: section-1-bosporus;    
+    height: 755px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; 
+    
+    
+}
+
+.section-2-bosporus{
+
+    grid-area: section-2-bosporus;    
+    background-color: rgb(22, 27, 22);
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+
+.section-3-bosporus{
+    grid-area: section-3-bosporus;
+    background-image: url(../assets/bg-bosporus.jpg);
+    background-repeat: no-repeat;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+
+}
+
+.section-4-bosporus{
+    grid-area: section-4-bosporus;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 850px;
+    text-align: center;
+    
+}
+
+/* Flex container del section 1 de bosporus.html */
+
+.flex-container-bosporus-1{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    width: 55%;
+    text-align: center;  
+    
+
+}
+
+/* Flex contaianer de los botones */
+
+.flex-container-bosporus-2{
+
+    display: flex;    
+    justify-content: center;
+    
+
+}
+
+/* Editando el texto debajo del logo*/
+
+.p-bosporus-logo{
+
+    font-family: 'Poppins', sans-serif;
+    color: white;    
+    
+}
+
+/* Titulo del section-2-bosporus */
+.p-bosporus-title{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(167, 0, 0);
+    font-size: 24px;
+    border-bottom: 1px solid rgb(167, 0, 0);
+}
+
+/* Modificcando el article del section 3 de bosporus.html */
+
+.article-1-bosporus{
+    width: 60%;
+}
+
+/* Modificando la fuente de las features */
+
+
+.p-bosporus-features{
+
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    
+    
+}
+
+/* Editando el span de las features */
+
+.span-features-bosporus{
+    color: rgb(173, 0, 0);
+    font-weight: 700;
+    margin-right: 25px;
+}
+
+/* Cambiando el color del H2 del trailer */
+
+.h2-bosporus{
+    color: rgb(173, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+}
+
+/* Modificando el iframe de bosporus */
+
+.iframe-bosporus{
+
+    height: 600px;
+    width: 1050px;
+}
+
+/* Intente hacer el responsive de este html
+pero tenia mucho overflow en x y en y, y no pude
+solucionarlo y ya hice el responsive de casi todos
+los html que pude para completar lo mínimo del
+responsive, asi que espero que no haya problema,
+si en una de esas me podes decir porq eu tengo mucho
+overflow y como solucionarlo te lo agradecería.
+Por más que utilizaba la propiedad de overflow para
+scrollear, parte de la info se me quedaba debajo del
+section-2
+
+*/
+
+/* GRID DEL LOGIN */
+
+.grid-container-login{
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr 50px;
+    grid-template-areas: 
+    
+        "header"
+        "section-login"
+        "footer"
+
+    ;
+}
+
+
+/* Section del login */
+
+.section-login{
+
+
+    grid-area: section-login;
+    
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+
+
+}
+
+/* Article del login */
+
+.article-login{
+
+    border-radius: 25px;
+    width: 50%;
+    height: 60%;
+    background-color: rgba(0, 0, 0, 0.459);
+    display: flex;
+    justify-content: center;
+    
+}
+
+/* Modificando el formulario del login de boostrap */
+
+.login-label{
+
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.div-login{
+
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.div-login-btn{
+
+    text-align: center;
+    margin-top: 25px;
+}
+

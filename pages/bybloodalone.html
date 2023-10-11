@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/styles.css">
+        <title>Hearts of Iron IV: By Blood Alone</title>
+    </head>
+<body class="bg-blood">
+    <header class="header header-blood">
+        <!-- Menu de navegacion -->
+        <nav class="navbar-flex-conteiner">
+            <ul>
+                <li>
+                    <a href="../index.html">
+                        <img src="../assets/hoi-logo4.png" alt="Logo de Hearts of Iron 4" class="img-logo-nav">
+                    </a>
+                </li>
+                
+                
+            </ul>
+            
+            
+            
+
+            <ul>
+                
+                <li>
+                    <!-- Dropdown de boostrap estilizado por mi, con la clase expansiones-btn-->
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle expansiones-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          EXPANSIONES
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./armsagainstyranny.html">Hearts of Iron 4: Arms Against Tyranny</a></li>
+                          <li><a class="dropdown-item" href="./bybloodalone.html">Hearts of Iron IV: By Blood Alone</a></li>
+                          <li><a class="dropdown-item" href="./nostepback.html">Hearts of Iron IV: No Step Back</a></li>
+                          <li><a class="dropdown-item" href="./bosporus.html">Hearts of Iron IV: Battle for the Bosporus</a></li>
+                          
+                          
+                        </ul>
+                      </div>
+                </li>
+                <li>
+                    <a href="./login.html" class="login-btn">LOGIN</a>
+                </li>
+                
+            </ul>
+
+        </nav>
+    </header>
+
+    <!-- Section 1 donde va el logo y el boton del trailer y comprar -->
+    <section id="logo" class="section-1-blood">
+        <!-- Logo y texto -->
+        <article class="flex-container-blood-1">
+            <img  src="../assets/HeartsOfIronIV_ByBloodAlone_Logo3__1_2.png" alt="Logo de By Blood Alone" class="img-logo-blood">
+            <!-- Texto extraído desde la página original -->
+            <p class="p-blood-logo">Construye un imperio, resiste a una agresión extranjera o explora los límites de la neutralidad en Hearts of Iron IV: By Blood Alone</p>
+        </article>
+        <!-- Boton de comprar y ver trailer -->
+        <article class="flex-container-blood-2">
+            <a href="https://store.steampowered.com/app/1880650/Expansion__Hearts_of_Iron_IV_By_Blood_Alone/" target="_blank" class="btn-comprar-index btn-blood-comprar">COMPRAR</a>
+            <a href="#trailer" class="btn-trailer-index btn-blood-trailer">VER TRAILER</a>
+        </article>
+
+    </section>
+    
+    <!-- Zona de las características -->
+    <section class="section-2-blood">
+                   
+            <article class="article-section-2-blood">
+                <h2 class="h2-blood">CARACTERÍSTICAS</h2>
+                <ul class="blood-features">
+                    <li class="li-features"><span class="span-features">Nuevo árbol de enfoques italiano: </span>Sigue el camino histórico con Mussolini o reescribe la historia restaurando el poder de la monarquía</li>
+                    <li class="li-features"><span class="span-features">Nuevo árbol de enfoques de Etiopía: </span>Resiste el invasor italiano o reconqusita tu nación con un gobierno en el exilio</li>
+                    <li class="li-features"><span class="span-features">Nuevo árbol de enfoques suizo: </span>Rodeada por Francia, Alemania e Italia, la nación de las montañas Suiza, se encuentra fuerte con su neutralidad.</li>
+                    <li class="li-features"><span class="span-features">Nuevas opciones en las conferencias de paz: </span>Desmilitariza zonas o naciones enteras o reclama el control sobre los recursos y las fabricas como reparaciones</li>
+                    <li class="li-features"><span class="span-features">Diseño de aeronaves: </span>Diseña y construye tus propios aviones</li>
+                    <li class="li-features"><span class="span-features">Medallas de Unidad: </span>Ahora vas a poder seguir el desempeño de tus unidades y otorgarles medallas que les darán bonificadores en combate, para que tus unidades de élite sean más potentes</li>
+                    <li class="li-features"><span class="span-features">Embargo: </span>Ahora puedes embargar a tus enemigos, esto previene el comercio con naciones hostiles si han generado la suficiente tensión mundial</li>
+                    <li class="li-features"><span class="span-features">Nuevos Modelos de Unidad:</span> Más de 20 modelos de unidades nuevas para Italia, Etiopía y Suiza</li>
+                    <li class="li-features"><span class="span-features">Nuevos Modelos de Aviones:</span> 67 nuevos modelos de aviones</li>
+                    
+
+                </ul>
+
+            </article>
+        
+
+    </section>
+    
+<!-- Trailer de YT -->
+
+    <section class="section-3-blood">
+        <article class="article-section-3-blood">   
+            <h2 class="h2-blood">TRAILER</h2>
+            
+            <iframe id="trailer" class="iframe-blood" src="https://www.youtube.com/embed/QiBAkCUdweY?si=kz53xp01YDWyNNR3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </article>
+
+    </section>
+
+    <footer class="footer">
+        <a href="#logo"><img src="../assets/logo-platypus-white.svg" alt="Logo de paradox" class="logo-footer"></a>
+        
+        <p class="text-footer">© 2023 Paradox Interactive AB. All trademarks are the property of their respective owners.</p>
+    </footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

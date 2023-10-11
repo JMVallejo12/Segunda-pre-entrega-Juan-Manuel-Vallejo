@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/styles.css">
+        <title>Hearts of Iron IV: Battle for the Bosporus</title>
+    </head>
+<body class="bg-bosporus grid-container-bosporus">
+    <header class="header header-bosporus">
+        <!-- Menu de navegacion -->
+        <nav class="navbar-flex-conteiner">
+            <ul>
+                <li>
+                    <a href="../index.html">
+                        <img src="../assets/hoi-logo4.png" alt="Logo de Hearts of Iron 4" class="img-logo-nav">
+                    </a>
+                </li>
+                
+                
+            </ul>
+            
+            
+            
+
+            <ul>
+                
+                <li>
+                    <!-- Dropdown de boostrap estilizado por mi, con la clase expansiones-btn-->
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle expansiones-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          EXPANSIONES
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./armsagainstyranny.html">Hearts of Iron 4: Arms Against Tyranny</a></li>
+                          <li><a class="dropdown-item" href="./bybloodalone.html">Hearts of Iron IV: By Blood Alone</a></li>
+                          <li><a class="dropdown-item" href="./nostepback.html">Hearts of Iron IV: No Step Back</a></li>
+                          <li><a class="dropdown-item" href="./bosporus.html">Hearts of Iron IV: Battle for the Bosporus</a></li>
+                                                    
+                        </ul>
+                      </div>
+                </li>
+                <li>
+                    <a href="./login.html" class="login-btn">LOGIN</a>
+                </li>
+                
+            </ul>
+
+        </nav>
+    </header>
+
+<!-- Secion 1 con el logo y los botones de comprar y ver el trailer -->
+
+    <section id="logo" class="section-1-bosporus">
+
+        <!-- Logo y texto debajo -->
+        <article class="flex-container-bosporus-1">
+            <img class="logo-bosporus" src="../assets/bosporus-logo.png" alt="Logo de HOI 4 Battle for the Bosporus">
+            <p class="p-bosporus-logo">Bulgaria, Gracia y Turquía, ahora pueden seguir un camino histórico o tener una historia alternativa, resistiendo a los esfuerzos de las grandes naciones para dominar el paso del Bósforo y los Dardanelos</p>
+        </article>
+
+        <!-- Boton de comprar y ver trailer -->
+        <article class="flex-container-bosporus-2">
+            <!-- Se reutiliza el flex container del html de blood alone y se cambian nada más los botones-->
+            <a href="https://store.steampowered.com/app/1348660/Expansion__Hearts_of_Iron_IV_Battle_for_the_Bosporus/" target="_blank" class="btn-comprar-index btn-step-comprar">COMPRAR</a>
+            <a href="#trailer" class="btn-trailer-index btn-step-trailer">VER TRAILER</a>
+        </article>
+
+        
+
+    </section>
+
+    <!-- Section 2 con un div decorativo y el titulo de las caracteristicas -->
+    <section class="section-2-bosporus">
+        <article>
+            <p class="p-bosporus-title">
+                CARACTERÍSTICAS
+            </p>
+        </article>
+        
+    </section>
+
+    <!-- Seccion de las caracteristicas de la expansion -->
+    <section class="section-3-bosporus">
+        <article class="article-1-bosporus">
+            <ul class="p-bosporus-features ">
+                <li><span class="span-features-bosporus">Enfoques nacionales para Bulgaria: </span> <br> <br> Equilibra las facciones en una tierra dividida o reclama territorios perdidos en 1919. Sigue el camino histórico de la alianza con Alemania o resiste la presión germana sobre Tsar Boris, álzate para una Bulgaria libre <br> <br></li>
+                <li><span class="span-features-bosporus">Enfoques nacionales para Grecia:</span> <br> <br> Partida por diviones políticas, la neutralidad griega es mantenida por el controversial Metaxas. Construye una fuerte relación con los Aliados bajo la guía del Rey Jorge II, sigue la rama del fascimas o restaura la gloria del Imperio Griego en el este <br> <br> </li>
+                <li><span class="span-features-bosporus">Enfoques nacionales para Turquía:</span> <br> <br> Robaron su imperio en la última guerra, que futuro le aguarda a Turquía en una nueva? Continua o detén las reformas del Kemalismo, álzate como protector de los Balcanes en una nueva facción regional, restaura el Sultan en el trono o funda un nuevo estado islámico <br> <br></li>
+            </ul>
+        </article>
+        
+    </section>
+
+    <!-- Seccion con el video de YT -->
+    <section class="section-4-bosporus">
+
+        <article>
+            <!-- TRAILER -->
+            <h2 class="h2-bosporus">TRAILER</h2>
+            <!-- IFRAME DEL TRAILER -->
+            <iframe id="trailer" class="iframe-bosporus" src="https://www.youtube.com/embed/mwq1aWZouDM?si=6EDNXlCOWUrIWAJv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </article>
+        
+    </section>
+
+    <!-- El footer -->
+    <footer class="footer">
+        <a href="#logo"><img src="../assets/logo-platypus-white.svg" alt="Logo de paradox" class="logo-footer"></a>
+        
+        <p class="text-footer">© 2023 Paradox Interactive AB. All trademarks are the property of their respective owners.</p>
+    </footer>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>

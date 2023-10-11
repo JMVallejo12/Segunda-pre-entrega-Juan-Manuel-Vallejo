@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/styles.css">
+        <title>Hearts of Iron IV: No Step Back</title>
+    </head>
+<body class="bg-stepback grid-container-step">
+    <header class="header header-stepback">
+        <!-- Menu de navegacion -->
+        <nav class="navbar-flex-conteiner">
+            <ul>
+                <li>
+                    <a href="../index.html">
+                        <img src="../assets/hoi-logo4.png" alt="Logo de Hearts of Iron 4" class="img-logo-nav">
+                    </a>
+                </li>
+                
+                
+            </ul>
+            
+            
+            
+
+            <ul>
+                
+                <li>
+                    <!-- Dropdown de boostrap estilizado por mi, con la clase expansiones-btn-->
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle expansiones-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          EXPANSIONES
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./armsagainstyranny.html">Hearts of Iron 4: Arms Against Tyranny</a></li>
+                          <li><a class="dropdown-item" href="./bybloodalone.html">Hearts of Iron IV: By Blood Alone</a></li>
+                          <li><a class="dropdown-item" href="./nostepback.html">Hearts of Iron IV: No Step Back</a></li>
+                          <li><a class="dropdown-item" href="./bosporus.html">Hearts of Iron IV: Battle for the Bosporus</a></li>
+                          
+                          
+                        </ul>
+                      </div>
+                </li>
+                <li>
+                    <a href="./login.html" class="login-btn">LOGIN</a>
+                </li>
+                
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- Section 1 con el logo y los boones de ver el trailer y comprar -->
+    <!-- Hay un error, que cuando tocas en el logo del footer, se queda trancado en el medio, pero si bajas y volver a tocar funciona bien, no sé por qué -->
+    <section id="logo" class="section-1-step">
+        <article class="flex-container-step-1">
+            <!-- Logo -->
+            <img class="logo-step" src="../assets/hoi4steplogo.png" alt="Logo de HOI 4 No Step Back">
+            <!-- Texto de abajo -->
+            <p class="p-step-1">
+                LAS REVOLUCIONES SON COMENZADAS POR IDEAS, Y ALIMENTADAS CON SUDOR
+            </p>
+
+            <p class="p-step-2">
+                La batalla más dura de la Segunda Guerra Mundial, fue en el frente del Este de Europa
+            </p>
+            
+        </article>
+
+
+        <!-- Boton de comprar y ver trailer -->
+        <article class="flex-container-blood-2">
+            <!-- Se reutiliza el flex container del html de blood alone y se cambian nada más los botones-->
+            <a href="https://store.steampowered.com/app/1348661/Expansion__Hearts_of_Iron_IV_No_Step_Back/" target="_blank" class="btn-comprar-index btn-step-comprar">COMPRAR</a>
+            <a href="#trailer" class="btn-trailer-index btn-step-trailer">VER TRAILER</a>
+        </article>
+
+    </section>
+
+<!-- Seccion de las caracteristicas -->
+    <section class="section-2-step flex-container-step-2">
+        <!-- Columna 1 -->
+        <article class="article-1-step">
+            
+                <ul class="features-step">
+                    
+                    <li class="li-features-step"><span class="span-features-step">Nuevos enfoques nacionales soviéticos:</span> <br> <br> Los gobernantes comunistas tienen que hacer frente dentro de su gobierno a traidores y opositores al partido.</li>
+                    <li class="li-features-step"><span class="span-features-step">Nuevos enfoques nacionales polacos:</span> <br> <br> Escribe una nueva historia con Polonia y reforma el gobierno, endurece las normas militares o apoya al creciente partido pro-soviético</li>
+                    <li class="li-features-step"><span class="span-features-step">Nuevos enfoques nacionales bálticos:</span> <br> <br> Historias alternativas para Estonia, Latvia y Lituania</li>
+                    <li class="li-features-step"><span class="span-features-step">Sistema de progresión para tus generales:</span> <br> <br> Construye tus generales, utiliza la experiencia ganada en combate para tomar ventaja en tecnología y tácticas</li>
+                </ul>
+            
+            
+        </article>
+
+        <!-- Columna 2 -->
+
+        <article class="article-2-step">
+            <ul class="features-step">
+                    
+                <li class="li-features-step"><span class="span-features-step">Espíritu de Ejército:</span> <br> <br> Enfatiza en ciertas características de tu ejército, agrega bonuses de generales a cierto tipo de unidades o crea tus propias diviones</li>
+                <li class="li-features-step"><span class="span-features-step">Actulizaciones del sistema de suministro:</span> <br> <br> Nuevas tácticas terrestres, puertos flotantes y unidades especiales de suministros agregados al sistema de logística</li>
+                <li class="li-features-step"><span class="span-features-step">Diseñador de Tanques:</span> <br> <br> Diseña tus propios tanques, priorizando lo que tu creas conveniente, desde la velocidad, el blindaje, potencia de disparo o hasta su coste de producción</li>
+                <li class="li-features-step"><span class="span-features-step">Cañones de vías férreas:</span> <br> <br> Fabrica imponentes cañones que solo pueden ser transportados por vías férreas, utilizados especialmente para destruir posiciones altamente fortificadas del enemigo</li>
+            </ul>
+            
+        </article>
+    </section>
+
+<!-- Section con el trailer -->
+    <section class="section-3-step">
+        <!-- No lo puse dentro de un article para no tener que crear en el CSS otra clase para hacer el flex container -->
+        
+            <h2 class="trailer-step">TRAILER</h2>
+            <iframe id="trailer" class="iframe-step" src="https://www.youtube.com/embed/dBJAOYiPsa4?si=johpW6817ZbNrV9U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+
+    </section>
+
+    <footer class="footer">
+        <a href="#logo"><img src="../assets/logo-platypus-white.svg" alt="Logo de paradox" class="logo-footer"></a>
+        
+        <p class="text-footer">© 2023 Paradox Interactive AB. All trademarks are the property of their respective owners.</p>
+    </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

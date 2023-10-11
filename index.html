@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Hearts of Iron IV</title>
+</head>
+<body class="bg-image grid-container-index">
+    
+    <header class="header">
+        <!-- Menu de navegacion -->
+        <nav class="navbar-flex-conteiner">
+            <ul>
+                <li>
+                    <a href="./index.html">
+                        <img src="./assets/hoi-logo4.png" alt="Logo de Hearts of Iron 4" class="img-logo-nav">
+                    </a>
+                </li>
+                
+                
+            </ul>
+            
+            
+            
+
+            <ul>
+                
+                <li>
+                    <!-- Dropdown de boostrap estilizado por mi, con la clase expansiones-btn-->
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle expansiones-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          EXPANSIONES
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="./pages/armsagainstyranny.html">Hearts of Iron IV: Arms Against Tyranny</a></li>
+                          <li><a class="dropdown-item" href="./pages/bybloodalone.html">Hearts of Iron IV: By Blood Alone</a></li>
+                          <li><a class="dropdown-item" href="./pages/nostepback.html">Hearts of Iron IV: No Step Back</a></li>
+                          <li><a class="dropdown-item" href="./pages/bosporus.html">Hearts of Iron IV: Battle for the Bosporus</a></li>
+                                                    
+                        </ul>
+                      </div>
+                </li>
+                <li>
+                    <a href="./pages/login.html" class="login-btn">LOGIN</a>
+                </li>
+                
+            </ul>
+
+        </nav> 
+
+        
+
+
+    </header>
+
+    <!-- Comienzo del contenido -->
+    <!-- No existe la etiqueta main porque fue borrada debido a una confusión al utilizar flexbox.-->
+
+        <!-- Imagen principal con un texto por debajo y los botones -->
+        <section id="logo"  class="index-font section-1" class="flex-container-index">
+            <article class="article-flex">
+                <img src="./assets/hoi-logo4.png" alt="Logo de Hearts of Iron 4" class="img-index">
+            </article>
+            <article class="article-flex">
+                <p class="p-index">EMBARCATE EN UNA NUEVA AVENTURA PARA ESCRIBIR TU PROPIA HISTORIA</p>
+            </article>
+            <article class="article-botones article-flex"">
+                <!-- Boton de comprar y mirar el trailer -->
+                <a href="https://store.steampowered.com/app/394360/Hearts_of_Iron_IV/" target="_blank" class="btn-comprar-index">COMPRAR</a>
+                <a href="#trailer" class="btn-trailer-index">VER TRAILER</a>
+
+            </article>
+            
+        </section>
+
+        <!-- Carrusel -->
+        <section class="section-2 article-flex">
+            <div id="carouselExampleIndicators" class="carousel slide carrusel-index">
+                <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/carrusel.jpeg" class="d-block w-100" alt="Ilustracion de unos tanques alemanes marchando en la nieve">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/carrusel2.jpg" class="d-block w-100" alt="Desembarco anfibio en una playa con soldados y tanques">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/carrusel3.jpg" class="d-block w-100" alt="Una foto de unos cazas alemanes en combate, volando encima de un pueblo">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Seccion del trailer -->
+        <section id="trailer" class="section-3">
+            <article class="article-flex">
+                <iframe class="iframe-index" src="https://www.youtube.com/embed/e9BiUtINy4w?si=sZQX3_1ioCIvIgRQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </article>
+        </section>
+
+
+        <!-- Section de las cards de las expansiones, las cards son elementos de boostrap -->
+
+        <section class="section-4">
+            <h2 class="h2-index">EXPANSIONES</h2>
+            <article class="flex-container-cards">
+                <div class="card boostrap-cards" style="width: 18rem;">
+                    <img src="./assets/bg-blood.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">HOI IV: By Blood Alone</h5>
+                      <p class="card-text">Construye un imperio, resiste a una agresión extranjera o explora los límites de la neutralidad en Hearts of Iron IV: By Blood Alone</p>
+                      <a href="https://store.steampowered.com/app/1880650/Expansion__Hearts_of_Iron_IV_By_Blood_Alone/" target="_blank" class="btn btn-cards">COMPRAR</a>
+                    </div>
+                  </div>
+
+                  <div class="card boostrap-cards" style="width: 18rem;">
+                    <img src="./assets/hoi-aat-bg.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">HOI IV: Arms Agains Tyranny</h5>
+                      <p class="card-text">Con esta expansión vas a disfrutar de más horas de contenido, alista tus tanques, prepara tus soldados y
+                        levantate en armas contra la tiranía.</p>
+                        <a href="https://store.steampowered.com/app/2183930/Expansion__Hearts_of_Iron_IV_Arms_Against_Tyranny/" target="_blank" class="btn btn-cards">COMPRAR</a>
+                    </div>
+                  </div>
+
+                  <div class="card boostrap-cards" style="width: 18rem;">
+                    <img src="./assets/bg-nostepback.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">HOI IV: No Step Back</h5>
+                      <p class="card-text">La batalla más dura de la Segunda Guerra Mundial, fue en el frente del Este de Europa</p>
+                      <a href="https://store.steampowered.com/app/1348661/Expansion__Hearts_of_Iron_IV_No_Step_Back/" target="_blank" class="btn btn-cards">COMPRAR</a>
+                    </div>
+                  </div>
+
+                  <div class="card boostrap-cards" style="width: 18rem;">
+                    <img src="./assets/bg-bosporus.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">HOI IV: Battle for the Bosporus</h5>
+                      <p class="card-text">Bulgaria, Gracia y Turquía, ahora pueden seguir un camino histórico o tener una historia alternativa, resistiendo a los esfuerzos de las grandes naciones para dominar el paso del Bósforo y los Dardanelos</p>
+                      <a href="https://store.steampowered.com/app/1348660/Expansion__Hearts_of_Iron_IV_Battle_for_the_Bosporus/" target="_blank" class="btn btn-cards">COMPRAR</a>
+                    </div>
+                  </div>
+            </article>
+        </section>
+
+
+    <footer class="footer">
+        <a href="#logo"><img src="./assets/logo-platypus-white.svg" alt="Logo de paradox" class="logo-footer"></a>
+        
+        <p class="text-footer">© 2023 Paradox Interactive AB. All trademarks are the property of their respective owners.</p>
+    </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
